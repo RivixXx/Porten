@@ -1,0 +1,243 @@
+@font-face {
+  font-family: "PlayfairDisplay";
+  src: url("../fonts/PlayfairDisplay-Bold.woff") format("truetype");
+  font-style: normal;
+  font-weight: 700;
+}
+@font-face {
+  font-family: "PlayfairDisplay";
+  src: url("../fonts/PlayfairDisplay-Bold.woff2") format("truetype");
+  font-style: normal;
+  font-weight: 700;
+}
+@font-face {
+  font-family: "PlayfairDisplay";
+  src: url("../fonts/PlayfairDisplay-Regular.woff") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: "PlayfairDisplay";
+  src: url("../fonts/PlayfairDisplay-Regular.woff2") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: "PTSans";
+  src: url("../fonts/PTSans-Regular.woff") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: "PTSans";
+  src: url("../fonts/PTSans-Regular.woff2") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: "PTSans";
+  src: url("../fonts/PTSans-Bold.woff") format("truetype");
+  font-style: normal;
+  font-weight: 700;
+}
+@font-face {
+  font-family: "PTSans";
+  src: url("../fonts/PTSans-Bold.woff2") format("truetype");
+  font-style: normal;
+  font-weight: 700;
+}
+@font-face {
+  font-family: "PostNoBillsJaffna";
+  src: url("../fonts/PostNoBillsJaffna-Bold.woff") format("truetype");
+  font-style: normal;
+  font-weight: 700;
+}
+@font-face {
+  font-family: "PostNoBillsJaffna";
+  src: url("../fonts/PostNoBillsJaffna-Bold.woff2") format("truetype");
+  font-style: normal;
+  font-weight: 700;
+}
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+html,
+body {
+  min-height: 100%;
+  line-height: 1.25;
+  font-size: 12px;
+  background: #000;
+  color: #fff;
+  font-family: PTSans, sans-serif;
+  font-weight: 400;
+}
+
+[class*=__container] {
+  max-width: 1109px;
+  margin: 0 auto;
+}
+
+.wrapper {
+  max-width: 1920px;
+  min-height: 100%;
+  margin: 0 auto;
+}
+
+.header__container_firstRow {
+  width: 100%;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__container_firstRow .firstRow_left {
+  display: flex;
+  align-items: center;
+  color: #969696;
+  height: 100%;
+}
+.header__container_firstRow .firstRow_left a {
+  color: #969696;
+  cursor: pointer;
+}
+.header__container_firstRow .firstRow_left a img {
+  margin-right: 16px;
+}
+.header__container_firstRow .firstRow_left span {
+  width: 1px;
+  height: 12px;
+  background-color: #969696;
+  margin: 0 15px;
+}
+.header__container_firstRow .firstRow_right {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.header__container_firstRow .firstRow_right-btn {
+  background: transparent;
+  color: #969696;
+  cursor: pointer;
+}
+
+.headerDown {
+  background-color: #0F0F0F;
+  width: 100%;
+}
+.headerDown__container_secondRow {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.headerDown__container_secondRow .secondRow_navigation {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.headerDown__container_secondRow .secondRow_navigation-links {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+.headerDown__container_secondRow .secondRow_navigation-link {
+  padding: 0 20px;
+  color: #969696;
+  font-size: 14px;
+  text-transform: uppercase;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.headerDown__container_secondRow .secondRow_navigation-link:last-child {
+  margin-right: -20px;
+}
+.headerDown__container_secondRow .secondRow_navigation-link:hover {
+  background-color: #1F1F1F;
+}
+
+.main {
+  max-width: 1920px;
+  height: 810px;
+  background-image: url(../img/first-screen.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+}
+.main .main__container {
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.main .main__container .main__logo {
+  margin-top: 160px;
+  width: 320px;
+  height: 320px;
+  border: #fff solid 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.main .main__container .main__logo-title {
+  font-family: PostNoBillsJaffna;
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 1;
+}
+.main .main__container .main__logo span {
+  width: 179px;
+  height: 2px;
+  background-color: #fff;
+  margin: 5px 0;
+}
+.main .main__container .main__logo-text {
+  margin-top: 6px;
+  font-size: 22px;
+  text-transform: uppercase;
+}
+.main .main__container .main__paragraph {
+  width: 730px;
+  margin-top: 80px;
+  margin-bottom: 155px;
+}
+.main .main__container .main__paragraph p {
+  color: #fff;
+  font-size: 16px;
+  line-height: 150%;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/*# sourceMappingURL=style.css.map */
