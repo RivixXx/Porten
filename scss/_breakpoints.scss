@@ -1,0 +1,91 @@
+//  Desktop first ==========================================================
+
+@mixin sm-u {
+    @media (min-width: map-get($breakpoints, sm)) {
+        @content;
+    }
+}
+
+@mixin md-u {
+    @media (min-width: map-get($breakpoints, md)) {
+        @content;
+    }
+}
+
+@mixin lg-u {
+    @media (min-width: map-get($breakpoints, lg)) {
+        @content;
+    }
+}
+
+// Only
+
+@mixin sm {
+    @media (max-width: map-get($breakpoints, md)) and (min-width: map-get($breakpoints, sm)) {
+        @content;
+    }
+}
+
+@mixin md {
+    @media (max-width: map-get($breakpoints, lg)) and (min-width: map-get($breakpoints, md)) {
+        @content;
+    }
+}
+
+@mixin lg {
+    @media (max-width: map-get($breakpoints, xl)) and (min-width: map-get($breakpoints, lg)) {
+        @content;
+    }
+}
+
+@mixin xl {
+    @media (max-width: map-get($breakpoints, xl)) {
+        @content;
+    }
+}
+
+// Mobile first========================================
+
+@mixin lg-d {
+    @media (max-width: map-get($breakpoints, xl)) {
+        @content;
+    }
+}
+
+@mixin md-d {
+    @media (max-width: map-get($breakpoints, lg)) {
+        @content;
+    }
+}
+
+@mixin sm-d {
+    @media (max-width: map-get($breakpoints, md)) {
+        @content;
+    }
+}
+
+// Only my ================================================
+
+@mixin xlmy {
+    @media (max-width: map-get($breakpoints, xl)) {
+        @content;
+    }
+}
+
+@mixin lgmy {
+    @media (max-width: map-get($breakpoints, lg)) {
+        @content;
+    }
+}
+
+@mixin mdmy {
+    @media (max-width: map-get($breakpoints, md)) {
+        @content;
+    }
+}
+
+@mixin smmy {
+    @media (max-width: map-get($breakpoints, sm)) {
+        @content;
+    }
+}
