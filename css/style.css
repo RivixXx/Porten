@@ -107,9 +107,15 @@ body._lock {
 }
 
 .wrapper {
-  max-width: 1920px;
+  max-width: 1940px;
   min-height: 100%;
   margin: 0 auto;
+  padding: 0 10px;
+}
+@media (max-width: 1280px) {
+  .wrapper {
+    padding: 0;
+  }
 }
 
 .header__container_firstRow {
@@ -376,6 +382,168 @@ body._lock {
   line-height: 150%;
   text-transform: uppercase;
   text-align: center;
+}
+
+.season {
+  max-width: 1920px;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+}
+@media (max-width: 1680px) {
+  .season {
+    flex-direction: column;
+  }
+}
+.season__left {
+  flex: 1 1 54%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 93px 0;
+}
+@media (max-width: 768px) {
+  .season__left {
+    padding-bottom: 73px;
+  }
+}
+.season__left-title {
+  font-family: PlayfairDisplay;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.season__left span {
+  width: 120px;
+  height: 1px;
+  background-color: #fff;
+  margin: 50px 0;
+}
+.season__left-cards {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+@media (max-width: 768px) {
+  .season__left-cards {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+}
+.season__left-cards .season__left-card {
+  width: 33.3333%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .season__left-cards .season__left-card {
+    width: 50%;
+    margin-bottom: 20px;
+  }
+}
+.season__left-cards .season__left-card .card__product {
+  width: 260px;
+  height: 325px;
+  background-color: #191B1C;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.season__left-cards .season__left-card .card__product-watch {
+  transition: all 0.3s ease;
+}
+.season__left-cards .season__left-card .card__product-watch:hover {
+  transform: scale(1.1);
+}
+.season__left-cards .season__left-card .card__description {
+  width: 260px;
+  height: auto;
+  padding-top: 25px;
+}
+.season__left-cards .season__left-card .card__description-title {
+  font-family: PlayfairDisplay;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+}
+.season__left-cards .season__left-card .card__description-text {
+  font-family: PlayfairDisplay;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: #D0D0D0;
+  margin-top: 10px;
+}
+.season__right {
+  flex: 1 1 46%;
+  max-height: 730px;
+  background-image: url(../img/cart/season_card-right.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 484px;
+  padding-bottom: 100px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  position: relative;
+}
+.season__right::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(37, 37, 37, 0.6);
+  z-index: 1;
+}
+.season__right-title {
+  font-family: PlayfairDisplay;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  text-transform: uppercase;
+  z-index: 2;
+}
+.season__right span {
+  width: 120px;
+  height: 1px;
+  background-color: #fff;
+  margin: 30px 0;
+  z-index: 2;
+}
+.season__right .button-only {
+  border: 1px solid #fff;
+  font-family: "PTSans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  background-color: transparent;
+  color: #fff;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.season__right .button-only:hover {
+  background-color: rgba(255, 255, 255, 0.171);
+  border-radius: 10px;
+}
+.season__right .button-only:active {
+  background-color: transparent;
+}
+.season__right-btn {
+  width: 138px;
+  height: 47px;
+  z-index: 2;
 }
 
 /*# sourceMappingURL=style.css.map */

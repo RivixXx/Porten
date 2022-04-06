@@ -112,9 +112,14 @@ body._lock {
 }
 
 .wrapper {
-    max-width: 1920px;
+    max-width: 1940px;
     min-height: 100%;
     margin: 0 auto;
+    padding: 0 10px;
+
+    @include xlmy {
+        padding: 0;
+    }
 }
 
 .header__container {
@@ -417,6 +422,7 @@ body._lock {
     }
 }
 
+@import "season";
 // @media only screen and (max-width : 1680px) {}
 // @media only screen and (max-width : 1366px) {}
 // @media only screen and (max-width : 1280px) {}
