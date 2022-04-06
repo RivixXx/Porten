@@ -5,3 +5,10 @@ $breakpoints: (
     xl: 1280px,
     xxl: 1680px
 );
+
+@mixin span {
+    width: 120px;
+    height: 1px;
+    background-color: #fff;
+    margin: 30px 0;
+}

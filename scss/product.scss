@@ -1,0 +1,29 @@
+.newProduct {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 120px 0 150px 0;
+
+    &-title {
+        font-family: 'PlayfairDisplay';
+        font-size: 36px;
+        line-height: 42px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    span {
+        @include span;
+    }
+
+    &__box {
+        width: 100%;
+        display: grid;
+        justify-items: center;
+        grid-template-columns: repeat(auto-fill, 250px);
+        gap: 30px 30px;
+
+        @import "card";
+    }
+}
