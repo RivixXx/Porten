@@ -540,6 +540,27 @@ body._lock {
 .season__right .button-only:active {
   background-color: transparent;
 }
+.season__right .button-footer {
+  border: 1px solid transparent;
+  padding: 10px 20px;
+  font-family: "PTSans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #D0D0D0;
+  background-color: #0F0F0F;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.season__right .button-footer:hover {
+  background-color: #363535;
+}
+.season__right .button-footer:active {
+  background-color: transparent;
+  border: 1px solid #fff;
+  border-radius: 5px;
+}
 .season__right-btn {
   padding: 12px 28px;
   z-index: 2;
@@ -625,6 +646,27 @@ body._lock {
 }
 .colection__right .button-only:active {
   background-color: transparent;
+}
+.colection__right .button-footer {
+  border: 1px solid transparent;
+  padding: 10px 20px;
+  font-family: "PTSans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #D0D0D0;
+  background-color: #0F0F0F;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.colection__right .button-footer:hover {
+  background-color: #363535;
+}
+.colection__right .button-footer:active {
+  background-color: transparent;
+  border: 1px solid #fff;
+  border-radius: 5px;
 }
 .colection__right-btn {
   padding: 12px 28px;
@@ -735,6 +777,240 @@ body._lock {
 }
 .brands__container_box-content {
   flex: 1 1 25%;
+}
+
+.footer {
+  max-width: 1920px;
+  height: 400px;
+  background-image: url(../img/footer-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.footer__container {
+  height: 100%;
+}
+.footer__container .footer__big {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.footer__container .footer__big_about {
+  width: 33.3333%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-right: 19px;
+}
+.footer__container .footer__big_about-title {
+  font-family: "PlayfairDisplay";
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  margin-top: 80px;
+  margin-bottom: 40px;
+}
+.footer__container .footer__big_about-text {
+  font-family: "PTSans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+}
+.footer__container .footer__big_category {
+  width: 33.3333%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 12px;
+  padding-right: 50px;
+}
+.footer__container .footer__big_category-title {
+  font-family: "PlayfairDisplay";
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  margin-top: 80px;
+  margin-bottom: 40px;
+}
+.footer__container .footer__big_category_box {
+  display: grid;
+  grid-template-areas: "watch bracers belt" "jewel jewel cufflinks";
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+.footer__container .footer__big_category_box .button-only {
+  border: 1px solid #fff;
+  font-family: "PTSans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  background-color: transparent;
+  color: #fff;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.footer__container .footer__big_category_box .button-only:hover {
+  background-color: rgba(255, 255, 255, 0.171);
+  border-radius: 10px;
+}
+.footer__container .footer__big_category_box .button-only:active {
+  background-color: transparent;
+}
+.footer__container .footer__big_category_box .button-footer {
+  border: 1px solid transparent;
+  padding: 10px 20px;
+  font-family: "PTSans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #D0D0D0;
+  background-color: #0F0F0F;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.footer__container .footer__big_category_box .button-footer:hover {
+  background-color: #363535;
+}
+.footer__container .footer__big_category_box .button-footer:active {
+  background-color: transparent;
+  border: 1px solid #fff;
+  border-radius: 5px;
+}
+.footer__container .footer__big_category_box .box-watch {
+  grid-area: watch;
+}
+.footer__container .footer__big_category_box .box-bracers {
+  grid-area: bracers;
+}
+.footer__container .footer__big_category_box .box-belt {
+  grid-area: belt;
+}
+.footer__container .footer__big_category_box .box-jewel {
+  grid-area: jewel;
+}
+.footer__container .footer__big_mailingList {
+  width: 33.3333%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.footer__container .footer__big_mailingList-title {
+  font-family: "PlayfairDisplay";
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  margin-top: 80px;
+  margin-bottom: 40px;
+}
+.footer__container .footer__big_mailingList-text {
+  font-family: "PTSans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  margin-bottom: 37px;
+}
+.footer__container .footer__big_mailingList_form {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  width: 100%;
+}
+.footer__container .footer__big_mailingList_form .form-area {
+  height: 42px;
+  width: 210px;
+  padding-left: 15px;
+  background: rgba(255, 255, 255, 0.4);
+}
+.footer__container .footer__big_mailingList_form .form-area::placeholder {
+  color: #c2bfbf;
+}
+.footer__container .footer__big_mailingList_form .button-only {
+  border: 1px solid #fff;
+  font-family: "PTSans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  background-color: transparent;
+  color: #fff;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.footer__container .footer__big_mailingList_form .button-only:hover {
+  background-color: rgba(255, 255, 255, 0.171);
+  border-radius: 10px;
+}
+.footer__container .footer__big_mailingList_form .button-only:active {
+  background-color: transparent;
+}
+.footer__container .footer__big_mailingList_form .button-footer {
+  border: 1px solid transparent;
+  padding: 10px 20px;
+  font-family: "PTSans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #D0D0D0;
+  background-color: #0F0F0F;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.footer__container .footer__big_mailingList_form .button-footer:hover {
+  background-color: #363535;
+}
+.footer__container .footer__big_mailingList_form .button-footer:active {
+  background-color: transparent;
+  border: 1px solid #fff;
+  border-radius: 5px;
+}
+.footer__container .footer__big_mailingList_form .form-btn {
+  flex: 1 1 140px;
+}
+
+.footer__row {
+  background-color: #0F0F0F;
+  height: 50px;
+}
+.footer__row__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+.footer__row-copyright {
+  font-family: "PTSans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #D0D0D0;
+}
+.footer__row-about {
+  font-family: "PTSans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  text-decoration-line: underline;
+}
+.footer__row-about a:visited {
+  color: #fff;
 }
 
 /*# sourceMappingURL=style.css.map */
