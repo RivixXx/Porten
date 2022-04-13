@@ -65,6 +65,11 @@
 }
 
 // Only my ================================================
+@mixin xxlmy {
+    @media (max-width: map-get($breakpoints, xxl)) {
+        @content;
+    }
+}
 
 @mixin xlmy {
     @media (max-width: map-get($breakpoints, xl)) {
@@ -84,14 +89,14 @@
     }
 }
 
-@mixin xlmy {
-    @media (max-width: map-get($breakpoints, xl)) {
+@mixin smmy {
+    @media (max-width: map-get($breakpoints, sm)) {
         @content;
     }
 }
 
-@mixin xxlmy {
-    @media (max-width: map-get($breakpoints, xxl)) {
+@mixin ssmmy {
+    @media (max-width: map-get($breakpoints, ssm)) and (min-width: map-get($breakpoints, m)) {
         @content;
     }
 }

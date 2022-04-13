@@ -26,8 +26,23 @@
             align-items: center;
             justify-content: space-between;
 
+            @include lgmy {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
             &-content {
                 flex: 1 1 25%;
+
+                @include lgmy {
+                    flex: 1 1 50%;
+                    display: flex;
+                    justify-content: center;
+                }
+
+                @include smmy {
+                    flex: 1 1 100%;
+                }
             }
         }
     }

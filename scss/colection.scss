@@ -2,6 +2,10 @@
     display: flex;
     max-width: 1920px;
 
+    @include xxlmy {
+        flex-direction: column-reverse;
+    }
+
     &__left {
         flex: 1 1 46%;
         max-height: 730px;
@@ -15,7 +19,24 @@
         flex-direction: column;
         justify-content: flex-start;
         position: relative;
-        
+
+        @include xlmy {
+            flex: 1 1 100%;
+            padding-top: 384px;
+        }
+
+        @include lgmy {
+            padding-top: 284px;
+        }
+
+        @include smmy {
+            padding-top: 184px;
+        }
+
+        @include ssmmy {
+            display: none;
+        }
+       
         &::after {
             content: '';
             position: absolute;
@@ -34,6 +55,19 @@
         align-items: center;
         flex-direction: column;
         padding-top: 100px;
+
+        @include xxlmy {
+            margin-bottom: 100px;
+        }
+
+        @include ssmmy {
+            background-image: url(../img/cart/colection_card-left.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            margin-bottom: 0;
+            padding-bottom: 50px;
+        }
 
         &-title {
             font-family: PlayfairDisplay;
@@ -57,6 +91,10 @@
             text-align: center;
             width: 471px;
             margin-bottom: 61px;
+
+            @include ssmmy {
+                width: 300px;
+            }
         }
 
         @import "btn";
@@ -64,6 +102,10 @@
         &-btn {
             padding: 12px 28px;
             z-index: 2;
+
+            @include ssmmy {
+                padding: 10px 15px;
+            }
         }
     }
 }

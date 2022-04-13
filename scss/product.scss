@@ -5,6 +5,10 @@
     justify-content: center;
     padding: 120px 0 150px 0;
 
+    @include ssmmy {
+        padding: 50px 0;
+    }
+
     &-title {
         font-family: 'PlayfairDisplay';
         font-size: 36px;
@@ -21,9 +25,12 @@
         width: 100%;
         display: grid;
         justify-items: center;
+        justify-content: center;
         grid-template-columns: repeat(auto-fill, 250px);
         gap: 30px 30px;
 
         @import "card";
+
+        
     }
 }

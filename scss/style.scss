@@ -133,18 +133,36 @@ body._lock {
             margin: 0 10px;
         }
 
+        @include ssmmy {
+            flex-direction: column;
+            font-size: 10px;
+        }
+
         .firstRow_left {
             display: flex;
             align-items: center;
             color: #969696;
             height: 100%;
 
+            @include ssmmy {
+                width: 100%;
+                justify-content: space-between;
+            }
+
             a {
                 color: #969696;
                 cursor: pointer;
 
+                @include smmy {
+                    font-size: 10px;
+                }
+
                 img {
                     margin-right: 16px;
+
+                    @include smmy {
+                        margin-right: 6px;
+                    }
                 }
             }
 
@@ -153,6 +171,22 @@ body._lock {
                 height: 12px;
                 background-color: #969696;
                 margin: 0 15px;
+
+                @include smmy {
+                    margin: 0 5px;
+                }
+            }
+
+            &-text {
+                @include smmy {
+                    font-size: 10px;
+                }
+            }
+
+            &-time {
+                @include smmy {
+                    font-size: 10px;
+                }
             }
         }
 
@@ -178,6 +212,7 @@ body._lock {
 .headerDown {
     background-color: #0F0F0F;
     width: 100%;
+    z-index: 9999;
 
     @include mdmy {
         position: sticky;
@@ -188,6 +223,7 @@ body._lock {
         height: 80px;
         display: flex;
         align-items: center;
+        z-index: 9999;
 
         @include xlmy {
             margin: 0 10px;
@@ -303,6 +339,10 @@ body._lock {
                     cursor: pointer;
                     z-index: 110;
 
+                    @include ssmmy {
+                        margin-right: 10px;
+                    }
+
                     span,
                     &::before,
                     &::after {
@@ -379,6 +419,10 @@ body._lock {
             align-items: center;
             justify-content: center;
 
+            @include ssmmy {
+                width: 300px;
+            }
+
             &-title {
                 font-family: PostNoBillsJaffna;
                 font-weight: bold;
@@ -411,12 +455,24 @@ body._lock {
                 margin-bottom: 155px;
             }
 
+            @include smmy {
+                    width: 400px;
+            }
+
+            @include ssmmy {
+                width: 310px;
+            }
+
             p {
                 color: #fff;
                 font-size: 16px;
                 line-height: 150%;
                 text-transform: uppercase;
                 text-align: center;
+
+                @include smmy {
+                    
+                }
             }
         }
     }
